@@ -3,9 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello</title>
+    <title>Virtual Dressing Room Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            background-color: #f0f8ff;
+        }
+
+        .sidebar {
+            width: 25%;
+            background-color: white;
+            padding: 2rem;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            color: #20B2AA;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+
+        .nav-menu {
+            list-style: none;
+        }
+
+        .nav-item {
+            margin-bottom: 1rem;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 0.8rem 1rem;
+            color: #333;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #20B2AA;
+            color: white;
+        }
+
+        .main-content {
+            width: 75%;
+            padding: 2rem;
+        }
+
+        .header {
+            margin-bottom: 2rem;
+        }
+
+        .title {
+            color: #20B2AA;
+            margin-bottom: 1rem;
+        }
+
+        .video-container {
+            width: 100%;
+            margin-bottom: 2rem;
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .placeholder-video {
+            width: 100%;
+            height: 400px;
+            background: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+
+        .tutorial-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tutorial-content h3 {
+            color: #20B2AA;
+            margin-bottom: 1rem;
+        }
+
+        .tutorial-content p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 1.5rem;
+        }
+    </style>
 </head>
 <body>
-    <p>This is Mohith</p>
+    <nav class="sidebar">
+        <div class="logo">Virtual Dressing Room</div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Manage Persons</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Outfits</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Shirts</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Pants</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Shoes</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Sports Dresses</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="header">
+            <h1 class="title">Welcome to AR Virtual Dressing Room</h1>
+            <p>Experience the future of fashion with our AR-based virtual dressing animations</p>
+        </div>
+
+        <div class="video-container">
+            <div class="placeholder-video">
+                <p>Tutorial Video Placeholder</p>
+            </div>
+        </div>
+
+        <div class="tutorial-content">
+            <h3>How to Use the Virtual Dressing Room</h3>
+            
+            <div class="step">
+                <h4>Step 1: Create Your Profile</h4>
+                <p>Start by creating a personal profile in the "Manage Persons" section. Upload your photos or use our AR scanning feature to create your virtual model.</p>
+            </div>
+
+            <div class="step">
+                <h4>Step 2: Browse Collections</h4>
+                <p>Explore our extensive collection of clothing items including shirts, pants, shoes, and complete outfits. Use the navigation menu to switch between different categories.</p>
+            </div>
+
+            <div class="step">
+                <h4>Step 3: Virtual Try-On</h4>
+                <p>Select any clothing item and use our AR technology to see how it looks on your virtual model. Rotate the view to see the outfit from different angles.</p>
+            </div>
+
+            <div class="step">
+                <h4>Step 4: Mix and Match</h4>
+                <p>Create complete outfits by combining different pieces. Save your favorite combinations for future reference.</p>
+            </div>
+
+            <div class="step">
+                <h4>Project Features</h4>
+                <p>Our AR-based virtual dressing system uses advanced computer vision and 3D modeling to provide realistic clothing simulations. Users can see how different outfits look on their virtual avatar in real-time, with accurate fabric physics and lighting.</p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
